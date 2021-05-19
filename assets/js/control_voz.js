@@ -34,6 +34,7 @@ function controlAudioSlides(numeroSlide) {
             break;            
         case 3:
             $('#carouselExampleIndicators').carousel(0);   
+            
             audioActual = new Audio('assets/voz/U001P05008.mp3');
             break;            
         case 4:
@@ -85,11 +86,11 @@ function controlAudioSlides(numeroSlide) {
             break;            
         case 15:
             $("#carouselExampleIndicators3").carousel(0);
-            audioActual = new Audio('assets/voz/UU001P05076.mp3');
+            audioActual = new Audio('assets/voz/U001P05076.mp3');
             break;               
         case 16:
 
-            audioActual = new Audio('assets/voz/UU001P05080.mp3');
+            audioActual = new Audio('assets/voz/U001P05080.mp3');
             break;            
         case 17:
             $('#carouselpantalla18').carousel(0);
