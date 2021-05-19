@@ -1526,6 +1526,7 @@ $('#carouselExampleIndicators4').on('slid.bs.carousel', function () {
 
     reproducirAudio(audioLocation);    
 })
+
 $('#carouselExampleIndicators5').on('slid.bs.carousel', function () {
     
     var numeroSlide = $('#carouselExampleIndicators5>div>div.active').index();
@@ -1551,6 +1552,7 @@ $('#carouselExampleIndicators5').on('slid.bs.carousel', function () {
 
     reproducirAudio(audioLocation);    
 })
+
 $('#carouselpantalla11').on('slid.bs.carousel', function () {
     
     var numeroSlide = $('#carouselpantalla11>div>div.active').index();
