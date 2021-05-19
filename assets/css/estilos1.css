@@ -1,0 +1,60 @@
+.pantalla5_img:hover{
+  width: 200%;
+}
+.aumentar:hover{
+  width: 100%;
+}
+
+.ahorcado_intento_2{
+  opacity: 0 !important;
+}
+
+/*.pantalla20_info{
+  height: 285px ! important;
+}
+.pantalla20{
+    height: 210px;
+    display: flex;
+}*/
+
+.aumento:hover{
+  width: 100%;
+}
+
+.divcontenido{
+    margin-bottom: 100px;
+    overflow-y: auto !important;
+    height: calc( 100vh - 200px ) !important;
+    overflow-x: hidden !important;
+}
+
+/* Tamaño del scroll */
+.divcontenido::-webkit-scrollbar {
+  width: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+.divcontenido::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.divcontenido::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.divcontenido::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+.divcontenido::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.divcontenido::-webkit-scrollbar-track:hover, 
+.divcontenido::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
