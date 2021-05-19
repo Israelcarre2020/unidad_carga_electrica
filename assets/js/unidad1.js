@@ -932,7 +932,10 @@ function pantalla24(num){
                           <p class="p_black font-weight-bold text-center">IDENTIFICAR EL TIPO DE CARGA: RESISTIVA (R), INDUCTIVA (L), CAPACITIVA (C), RL, RC, RLC:</p>
                           <p class="p_black">Circuitos resistivos en corriente alterna:</p>
                           <p class="p_black">Un circuito resistivo es aquel que en condiciones ideales tiene un consumo puro de energía netamente activa.</p>
-                          <img src="assets/img/Figura59.jpg" class="img30">
+                          <div style="display: flex; justify-content: center">
+                          <img src="assets/img/Figura59.png" class="img30">
+                          </div>
+                          
                           <p class="p_black">Impedancia (Z): La impedancia representa la resistencia eléctrica total de un elemento eléctrico, teniendo en mente que se cuenta con una parte real que es la resistencia resistiva y otra imaginaria que es la resistencia inductiva o capacitiva. En los circuitos resistivos no hay parte imaginaria debido a que no hay resistencia inductiva o capacitiva.</p>
                           <p class="p_black text-center">Z = R + 0 j; Z= R (0°)</p>
                         </div>
