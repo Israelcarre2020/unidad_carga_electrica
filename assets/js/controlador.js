@@ -59,24 +59,24 @@ $(document).ready(function () {
 
         switch (number_at) {
             case "c1":
-                $('#smartwizard').smartWizard("goToStep", 3);
-                $('#smartwizard2').smartWizard("goToStep", 3);
+                $('#smartwizard').smartWizard("goToStep", 4);
+                $('#smartwizard2').smartWizard("goToStep", 4);
             break;
             case "c2":
-                $('#smartwizard').smartWizard("goToStep", 9);
-                $('#smartwizard2').smartWizard("goToStep", 9);
+                $('#smartwizard').smartWizard("goToStep", 10);
+                $('#smartwizard2').smartWizard("goToStep", 10);
             break;
             case "c3":
-                $('#smartwizard').smartWizard("goToStep", 15);
-                $('#smartwizard2').smartWizard("goToStep", 15);
+                $('#smartwizard').smartWizard("goToStep", 16);
+                $('#smartwizard2').smartWizard("goToStep", 16);
             break;
             case "c4":
-                $('#smartwizard').smartWizard("goToStep", 20);
-                $('#smartwizard2').smartWizard("goToStep", 20);
+                $('#smartwizard').smartWizard("goToStep", 21);
+                $('#smartwizard2').smartWizard("goToStep", 21);
             break;
             case "c5":
-                $('#smartwizard').smartWizard("goToStep", 23);
-                $('#smartwizard2').smartWizard("goToStep", 23);
+                $('#smartwizard').smartWizard("goToStep", 24);
+                $('#smartwizard2').smartWizard("goToStep", 24);
             break;
           default:
             //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
@@ -268,35 +268,35 @@ $(document).ready(function () {
         var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"))+1;
          
         switch (stepIndex) {
-            case 3:
+            case 4:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 9:
+            case 10:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 15:
+            case 16:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 20:
+            case 21:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
                 setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
                 $(".controls-slide").hide();
                 break;
-            case 23:
+            case 24:
                 pause_audio();
                 $(".divcontenido").animate({ width: 'hide' }); 
                 $(".menu-actividades").show(1000); 
@@ -731,6 +731,31 @@ $(document).ready(function () {
     tabLinks2.forEach(function(el) {
        el.addEventListener("click", openTabs2);
     });
+
+    $(".tablinks2").click(function(){
+
+        var idTabs = $(this).parent().parent().parent().attr("id");        
+    
+        $(`#${idTabs}>div>.tabs>button`).removeClass("active");
+        $(`#${idTabs}>div>.wrapper_tabcontent>div`).removeClass("active");
+        
+        $(this).addClass("active");
+        $(`#${$(this).attr("data-country")}`).addClass("active");
+    
+        audioTabs($(this).attr("data-country"));
+    });
+    $(".tablinks2_hover").on("mouseover",function(){
+        var idTabs = $(this).parent().parent().parent().attr("id");        
+    
+        $(`#${idTabs}>div>.tabs>button`).removeClass("active");
+        $(`#${idTabs}>div>.wrapper_tabcontent>div`).removeClass("active");
+        
+        $(this).addClass("active");
+        $(`#${$(this).attr("data-country")}`).addClass("active");
+    
+        audioTabs($(this).attr("data-country"));
+    });
+    
 
 
     function openTabs(el) {
