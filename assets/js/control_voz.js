@@ -89,23 +89,31 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/U001P05012.mp3');
             break;            
         case 6:          
+        $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             $(".pantalla5_color").css('background','#2c538e');
             $(".pantalla5_opcion1").css('background','#CFFFFF');
             pantalla5_cambio(4);
             audioActual = new Audio('assets/voz/U001P05017.mp3');
             break;    
         case 7:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             $("#pantalla6").html('');
             $(".pantalla6_color").css('background','#0A7DC9');
             audioActual = new Audio('assets/voz/U001P05020.mp3');
             break;                                              
         case 8:
             pantalla7_cambio(5);
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             $(".pantalla7_color").css('background','#2c538e');
             $(".pantalla7_opcion1").css('background','#CFFFFF');
             audioActual = new Audio('assets/voz/U001P05023.mp3');
             break;                                              
         case 9:        
+        $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades1`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/U003P04089.mp3');
             break;            
         case 10:
@@ -121,20 +129,27 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/U001P05033.mp3');
             break;            
         case 12:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             $("#carouselpantalla11").carousel(0);    
             audioActual = new Audio('assets/voz/U001P05045.mp3');
             break;            
         case 13:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             $("#carouselpantalla12").carousel(0);
             audioActual = new Audio('assets/voz/U001P05051.mp3');
             break;
         case 14:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             pantalla13(8);
             $(".pantalla13_btn").css('background','#e67e22');      
             audioActual = new Audio('assets/voz/U001P05055.mp3');
             break;            
         case 15:
-            
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades2`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/U001P05075.mp3');
             break;            
         case 16:
@@ -149,14 +164,20 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/U001P05080.mp3');
             break;            
         case 18:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad");
             $('#carouselpantalla18').carousel(0);
             audioActual = new Audio('assets/voz/U001P05099.mp3');
             break;            
         case 19:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad");
             $(".pantalla18_info").css('background','#FFFFFF');
             audioActual = new Audio('assets/voz/U001P05102.mp3');
             break;            
-        case 20:         
+        case 20:  
+        $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades3`).addClass("active_actividad");       
             audioActual = new Audio('assets/voz/U001P05109.mp3');
             break;
         case 21:
@@ -172,6 +193,8 @@ function controlAudioSlides(numeroSlide) {
             audioActual = new Audio('assets/voz/U001P05114.mp3');
             break;                         
         case 23:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades4`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/U001P05134.mp3');
             break;                         
         case 24:
@@ -189,22 +212,30 @@ function controlAudioSlides(numeroSlide) {
             pantalla24(8);
             audioActual = new Audio('assets/voz/U001P05139.mp3');
             break;                         
-        case 26:         
+        case 26:   
+        $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades5`).addClass("active_actividad");      
             audioActual = new Audio('assets/voz/U001P05156.mp3');
             break;      
         case 27:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades5`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/U001P05157.mp3');
             break;   
         case 28:
             $(`.menu_actidades`).removeClass("active_actividad");
-            $(`.menu_actidades4`).addClass("active_actividad");
+            $(`.menu_actidades5`).addClass("active_actividad");
             $("#carouselActividadAprendizaje4").carousel(0);
             audioActual = new Audio('assets/voz/U14D130.mp3');
             break; 
         case 29:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades5`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/U14D134.mp3');
             break;
         case 30:
+            $(`.menu_actidades`).removeClass("active_actividad");
+            $(`.menu_actidades5`).addClass("active_actividad");
             audioActual = new Audio('assets/voz/U14D138.mp3');
             break; 
         case 31:
@@ -297,7 +328,6 @@ function audioActivoFuncion() {
         audioActual.play();  
     }
 }
-
 $("#pauseAudio").click(function() {
 
     if (!audioActivo)
